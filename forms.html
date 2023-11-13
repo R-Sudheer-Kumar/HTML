@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms </title>
+
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        td
+        {
+            font-size: 20px;
+            padding:10px 0;
+        }
+        th
+        {
+            font-size: 27px;
+        }
+        .login
+        {
+            margin-bottom: 50px;
+        }
+        hr
+        {
+            border:2px solid black;
+            margin-bottom: 50px;
+        }
+        button 
+        {
+            font-size: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form class="login">
+        <table>
+            <tr>
+                <th colspan="2">Login</th>
+            </tr>
+            <tr>
+                <td>Enter Email ID : </td>
+                <td>
+                    <input type="email" name="useremail" id="useremail">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password : </td>
+                <td>
+                    <input type="password" name="userpwd" id="userpwd">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Login</button></td>
+            </tr>
+        </table> 
+    </form>
+
+    <hr width="100%" />
+
+    <form class="register">
+        <table >
+            <tr>
+                <th colspan="2">Registration</th>
+            </tr>
+            <tr>
+                <td>Name : </td>
+                <td>
+                    <input type="text" name="username" id="username">
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID : </td>
+                <td>
+                    <input type="email" name="umailid" id="umailid">
+                </td>
+            </tr>
+            <tr>
+                <td>Password : </td> 
+                <td>
+                    <input type="password" name="upwd" id="upwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number : </td>
+                <td>
+                    <input type="number" name="unum" id="unum">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="ugender" id="male"> Male
+                    <input type="radio" name="ugender" id="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth : </td>
+                <td>
+                    <input type="date" name="udob" id="udob">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Languages Known :: </td>
+                <td >
+                    <input type="checkbox" name="ulang">English <br>
+                    <input type="checkbox" name="ulang">Telugu  <br>
+                    <input type="checkbox" name="ulang">Hindi  <br>
+                    <input type="checkbox" name="ulang">Tamil
+                </td>
+            <tr>
+                <td>Address : </td>
+                <td>
+                    <textarea name="uaddress" id="uaddress" cols="30" rows5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
